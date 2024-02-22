@@ -1,5 +1,6 @@
 .topnav {
-    background-color: #3b0650;
+    position: sticky;
+    margin-left: 0%;
     overflow: hidden;
   }
   
@@ -22,18 +23,56 @@
   
   /* Add an active class to highlight the current page */
   .topnav a.active {
-    background-color: #7397ab;
+    background-color: rgb(115, 49, 135);
     color: antiquewhite;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
   .topnav .icon {
+
     display: none;
   }
 body{
     color: rgb(49, 12, 79);
     background-color: antiquewhite;
 }
+.parent_container{
+
+  border-color: #3b0650;
+  border-style: solid;
+  padding: 0%;
+  margin: 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 2px 10px;
+  
+}
+.container{
+  color: antiquewhite;
+  font-size: large;
+  border-style: solid;
+  margin: 2%;
+  padding: 1%;
+  order: 5;
+  
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(127, 99, 147);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: rgb(115, 49, 135);
+  color: white;
+}
+
 footer{
     position: fixed;
     left: 0;
