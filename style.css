@@ -40,22 +40,24 @@ body{
 
   border-color: #3b0650;
   border-style: solid;
+  border-width: 1%;
   padding: 0%;
   margin: 0%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content:space-between;
   flex-wrap: wrap;
-  gap: 2px 10px;
+  gap: 1px 5px;
   
 }
 .container{
   color: antiquewhite;
   font-size: large;
   border-style: solid;
-  margin: 2%;
-  padding: 1%;
-  order: 5;
+  border: #3b0650;
+  margin: 1%;
+  padding: 0%;
+  justify-content: space-between;
   
 }
 a:link, a:visited {
