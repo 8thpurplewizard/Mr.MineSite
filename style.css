@@ -36,6 +36,42 @@ body{
     color: rgb(49, 12, 79);
     background-color: antiquewhite;
 }
+/* table style */
+#gametable{
+  /* font-family: Arial, sans-serif;
+  color: antiquewhite;
+  border: 5px solid rgb(3, 139, 144);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(94, 8, 94);
+  margin: 0;
+  padding: 20px; */
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+/* style for whole table */
+#gametable th, #gametable td {
+  border: 1px solid purple;
+  padding: 8px;
+}
+/* style for body, switching colors */
+#gametable tbody tr:nth-child(even) {
+  background-color: #cb30ff;
+  color: antiquewhite;
+}
+/* style for header */
+#gametable thead {
+  background-color: #50075f;
+  color: antiquewhite;
+}
+/* style for hovering body */
+#gametable tbody tr:hover {
+  background-color: #ff3db5;
+}
 .parent_container{
 
   border-color: #3b0650;
