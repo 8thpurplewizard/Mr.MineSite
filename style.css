@@ -35,6 +35,8 @@
 body{
     color: rgb(49, 12, 79);
     background-color: antiquewhite;
+    font-size: large;
+    text-align: center;
 }
 /* table style */
 #gametable{
@@ -45,8 +47,8 @@ body{
   flex-direction: column;
   align-items: center;
   background-color: rgb(94, 8, 94);
-  margin: 0;
-  padding: 20px; */
+  margin: 0; */
+  padding: 20px;
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
