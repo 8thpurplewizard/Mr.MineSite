@@ -1,56 +1,85 @@
 .topnav {
-    position: sticky;
-    margin-left: 0%;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    display: block;
-    color: antiquewhite;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #ddd;
-    color: purple;
-  }
-  
-  /* Add an active class to highlight the current page */
-  .topnav a.active {
-    background-color: rgb(115, 49, 135);
-    color: antiquewhite;
-  }
-  
-  /* Hide the link that should open and close the topnav on small screens */
-  .topnav .icon {
-
-    display: none;
-  }
-body{
-    color: rgb(49, 12, 79);
-    background-color: antiquewhite;
+  position: sticky;
+  margin-left: 0%;
+  overflow: hidden;
 }
-.parent_container{
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: antiquewhite;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: purple;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: rgb(115, 49, 135);
+  color: antiquewhite;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+body {
+  color: rgb(49, 12, 79);
+  background-color: antiquewhite;
+}
+.parent_container {
   border-color: #3b0650;
   border-style: solid;
   border-width: 1%;
   padding: 0%;
-  margin: 0%;
+  margin: 2%;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1px 5px;
-  
 }
-.container{
+.container {
   color: antiquewhite;
   font-size: large;
   border-style: solid;
@@ -58,9 +87,9 @@ body{
   margin: 1%;
   padding: 0%;
   justify-content: space-between;
-  
 }
-a:link, a:visited {
+a:link,
+a:visited {
   background-color: white;
   color: black;
   border: 2px solid rgb(127, 99, 147);
@@ -70,17 +99,22 @@ a:link, a:visited {
   display: inline-block;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
   background-color: rgb(115, 49, 135);
   color: white;
 }
 
-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(107, 4, 104);
-    color: antiquewhite;
-    text-align: center;
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(107, 4, 104);
+  color: antiquewhite;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
 }
