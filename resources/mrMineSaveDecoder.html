@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Mr. Mine Save Decoder</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html">ABOUT</a>
+      <a href="../wiki.html">WIKI</a>
+      <a href="../me.html">ABOUT ME</a>
+      <a href="resources.html" class="active">RESOURCES</a>
+      <a href="../board.html">LEADERBOARD</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <h1>Decoder</h1>
+    <input type="text" id="mrMineSaveInput" placeholder="Enter number" />
+    <button onclick="mrMineSaveDecoder()">Convert</button>
+    <p id="outputSave">Output:</p>
+
+    <div id="infoPopup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="hideInfoPopup()">&times;</span>
+        <p>
+          TBT, this is a work in progress. It will decode the save file
+        </p>
+      </div>
+    </div>
+
+    <button onclick="showInfoPopup()">Info</button>
+
+    <script src="../function.js"></script>
+</html>
