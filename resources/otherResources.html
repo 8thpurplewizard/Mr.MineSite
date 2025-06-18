@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <title>Number Converter</title>
+  </head>
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="../index.html">ABOUT</a>
+      <a href="../wiki.html">WIKI</a>
+      <a href="../me.html">ABOUT ME</a>
+      <a href="resources.html" class="active">RESOURCES</a>
+      <a href="../board.html">LEADERBOARD</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <h1>Number Converter</h1>
+    <input type="text" id="userInput" placeholder="Enter number" />
+    <button onclick="convrtFunction()">Convert</button>
+    <p id="output">Output:</p>
+
+    <div id="infoPopup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="hideInfoPopup()">&times;</span>
+        <p>
+          This converts big numbers into small neater ones, like 23.33 Trillion
+          or something.
+        </p>
+      </div>
+    </div>
+
+    <button onclick="showInfoPopup()">Info</button>
+
+    <script src="../function.js"></script>
+  </body>
+</html>
