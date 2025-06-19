@@ -11,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
+  <script src="function.js"></script>
   <body>
     <div class="topnav" id="myTopnav">
       <a href="index.html">ABOUT</a>
@@ -35,7 +36,16 @@
     </p>
     <h2>Idle Games I've Played</h2>
 
-    <h2>Latest wiki contributions:</h2>
+    <h2>Wiki Related Information</h2>
+    <input
+      type="text"
+      id="fandomUser"
+      placeholder="Enter User's name"
+      value="8thpurple"
+    />
+    <button onclick="fandomUserLatestContributions()">Get User Info</button>
+    <p id="fandomUserInfo">Latest Contributions:</p>
+
     <p>
       <iframe
         src="https://mrmine.fandom.com/wiki/Special:Contributions/8thpurple"
