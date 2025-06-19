@@ -48,3 +48,31 @@ function showInfoPopup() {
 function hideInfoPopup() {
   document.getElementById("infoPopup").style.display = "none";
 }
+
+function fandomUserLatestContributions() {
+  const username = document.getElementById("fandomUser").value.trim();
+  const apiUrl = `https://mrmine.fandom.com/api.php?action=query&list=usercontribs&ucuser=${username}&format=json&origin=*`;
+
+  fetch(apiUrl)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      return response.json();
+    })
+    .then((data) => {
+      const outputElement = document.getElementById("fandomUserInfo");
+      // You'll find the contributions data under data.query.usercontribs
+      const contributions = data.query.usercontribs;
+      console.log(`Contributions for ${username}:`);
+      contributions.forEach((contrib) => {
+        console.log(
+          `  Page: ${contrib.title}, Revision ID: ${contrib.revid}, Timestamp: ${contrib.timestamp}`
+        );
+        outputElement.innerHTML += `<p>Page: ${contrib.title}, Timestamp: ${contrib.timestamp}</p>`;
+      });
+    })
+    .catch((error) => {
+      console.error("Error fetching data:", error);
+    });
+}
